@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos em HTML5</title>
+    <link rel="shortcut icon" href="../desafio05/imagens/favicon (1).webp" type="image/x-icon">
+</head>
+<body>
+    <h1 style="background-color: rgb(152, 152, 201); text-align: center;">Inserindo vários vídeos hospedados localmente</h1>
+    <p> Este vídeo está hospedado no meu próprio sorvidor.</p>
+    <!-- <video src="midia/meuvideo.mp4" width="500" controls></video> -->
+    
+    
+    <video width="560" poster="imagens/limoes.jfif" controls autoplay loop>
+       <!-- width: tamaho do video | porter: imagem que fica visível antes da mídia ser executada | controls: controle de pay/pause-->
+       
+        <!--o ideal é colocar aqui maior quantidade de tipos diferentes-->
+        <source src="midia/meuvideo.mp4"  type="video/mp4">
+        <source src="midia/meuvideo.m4v"  type="video/mp4">
+        <source src="midia/meuvideo.webm" type="video/webm">
+        <p>Seu navegador não é compatível com este vídeo.</p>
+    </video>
+    <hr>
+    <h1 style="background-color: rgb(152, 152, 201); text-align: center;">Inserindo vídeos do youtube</h1>
+    <p>Este vídeo está hospedado no YouTube. O que pode ser feito é hospedar o vídeo no canal do youtube e linkar dele</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <p>Este vídeo está hospedado no Vimeo. O que pode ser feito é hospedar o vídeo no canal do youtube e linkar dele</p>
+    <p><iframe src="https://player.vimeo.com/video/191894507?h=e15bf4bcf0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> </p>
+    <!-- <p><a href="https://vimeo.com/191894507">Animation Reel</a> from <a href="https://vimeo.com/shaoyuhsu">Shao YU Hsu</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
+
+</body>
+</html>
