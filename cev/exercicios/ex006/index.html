@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Comentado 01</title>
+    <link rel="shortcut icon" href="bg1.png" type="image/x-icon"> <!-- crtl + espaço abre o que tem na pasta-->
+</head>
+<body>
+    <h1>Links e Âncoras em HTML5</h1>
+    <h2>Usando links externos</h2> <!-- Relação com uma pasta que está dentro do servidor próprio-->
+    <p>Aqui você pode acessar meu repositório do <a href="https://github.com/adilagabrielly" target="_blank" rel="external">GitHub.</a> </p>
+    <p>Aqui você pode acessar meu canal do <a href="https://www.youtube.com/channel/UCGH-lrg5TBodxq7dvEt8YYA" target="_blank" rel="external">Youtube.</a> </p>
+    <p>Aqui você pode acessar o site da loja <a href="https://www.lojasrenner.com.br/" target="_blank" rel="external">Renner.</a> </p>
+    <hr>
+    <hr>
+
+    <h2>Usando links internos</h2> <!-- Relação com uma pasta que está dentro do servidor próprio-->
+    <a href=""></a>
+    <p><a href="pag02.html" target="_blank" rel="next"> Página1</a> do site.</p> <!-- Rel significa a ordem do site. Esse link avança. | Abre o link interno em uma nova guia--> 
+    <p><a href="noticias/pag03.html" target="_self" rel="next">Página 2</a> do site.</p> <!--Abre o link interno na prórpia guia. -->
+
+
+    <hr>
+    <h2 style="background-color: violet; text-align: center;" >Links para Download</h2>
+    <ul> <!-- Cria uma lista não ordenada-->
+        <li><a href="livro/exemplo_download.pdf" download="meulivro.pdf" type="application/pdf">Baixar livro em pdf</a></li>
+        <li><a href="livro/exemplo_download.zip" download="meulivro.zip" type="application/zip">Baixar livro em .zip</a></li>
+    </ul>
+</body>
+</html>

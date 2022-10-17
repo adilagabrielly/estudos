@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Comentado</title>
+    <link rel="shortcut icon" href="../ex005/bg2.png" type="image/x-icon">
+</head>
+<body>
+    <h1 style="text-align: center; background-color: aqua;">Mídias em HTML5 | Imagem dinâmica </h1>
+    <p>Tente abrir esse site em vários dispositivos ou simplesmente redimensione o tamanho do navegador.</p>
+    <picture> <!--Picture: permite que a imagem tenha várias fontes-->
+        <!--Source: tem que ser na ordem da imagem, da menor para a maior-->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png"> <!--Se a imagem estiver num navegador com menos de 750px, puxa a foto-p-->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"> <!--Se a imagem estiver num navegador com menos de 1050px, puxa a foto-m-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <hr>
+    
+    
+    <h1 style="background-color: violet; text-align:center">Reproduzindo áudio</h1>
+    <!-- <audio src="midia/audio1.mp3" controls autoplay></audio> --> <!--MP3 WAV OGG-->
+    
+    
+    <audio preload="auto" autoplay controls loop>
+        <source src="midia/audio1.mp3" type="audio/mpeg">
+        <source src="midia/audio1.ogg" type="audio/ogg">
+        <source src="midia/audio1.wav" type="audio/wav">
+        <p>Seu navegador não executa esse arquivo. <a href="midia/audio1.mp3">Clique aqui para baixar o arquivo de aúdio.</a></p>
+    </audio>
+</body>
+</html>
