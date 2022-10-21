@@ -1,0 +1,15 @@
+/*Regras do CSS */
+@charset "UTF-8";  
+
+body {
+    background-color: rgb(193, 236, 175);
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 20px;
+}    
+h1{
+    background-color: antiquewhite;
+    color:rgb(86, 86, 231)
+}
+h2 {
+    color: rgb(83, 94, 90);
+}
